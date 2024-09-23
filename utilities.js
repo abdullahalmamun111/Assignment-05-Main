@@ -1,24 +1,23 @@
+// input id value capture
 function getValueOfId(id){
     const idName = document.getElementById(id).value;
     const idParseFloat = parseFloat(idName);
     return idParseFloat;
 }
-
-
+// text id value capture
 function idTextValueCapture(id){
     const capture = document.getElementById(id).innerText;
     const parseFloatValue = parseFloat(capture);
     return parseFloatValue ;
 }
-// section hide function
+// section hide and show function
 function sectionHide(id){
     document.getElementById('donate-section').classList.add('hidden');
     document.getElementById('history').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden');
 }
 
-
-
+// donate functionality
 function Donate(place,amount,totalDonate,mainBalance){
         // update donate amount
         const inputAmount = getValueOfId(amount);
@@ -41,6 +40,7 @@ function Donate(place,amount,totalDonate,mainBalance){
             <div class="w-9/12 mx-auto ">
             <div class="p-[20px] border-solid border-2 rounded-xl mt-8 space-y-2" id="transaction-history">
             <h1 class = "text-xl ">${inputAmount} Taka Is Doanated For Donate for Flood at Noakhali,Bangladesh</h1>
+            <p>${new Date()}</p>
         </div>
     </div>
     `
@@ -52,6 +52,7 @@ function Donate(place,amount,totalDonate,mainBalance){
             <div class="w-9/12 mx-auto ">
             <div class="p-[20px] border-solid border-2 rounded-xl mt-8 space-y-2" id="transaction-history">
             <h1 class = "text-xl ">${inputAmount} Taka Is Doanated For Donate for Flood at Feni,Bangladesh</h1>
+            <p>${new Date()}</p>
         </div>
     </div>
     `
@@ -63,6 +64,7 @@ function Donate(place,amount,totalDonate,mainBalance){
             <div class="w-9/12 mx-auto ">
             <div class="p-[20px] border-solid border-2 rounded-xl mt-8 space-y-2" id="transaction-history">
             <h1 class = "text-xl ">${inputAmount} Taka Is Doanated For Donate for Quota movement Bangladesh</h1>
+            <p>${new Date()}</p>
         </div>
     </div>
     `
