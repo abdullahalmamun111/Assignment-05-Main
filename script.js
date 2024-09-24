@@ -17,3 +17,4 @@ document.getElementById('showDonate').addEventListener('click', function(){
     historyBtn.classList.remove('bg-[#B4F461]');
     historyBtn.classList.remove('hover:bg-[#B4F461]')
 })
+

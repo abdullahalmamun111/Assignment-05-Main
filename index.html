@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
-
+   
     <script>
         tailwind.config = {
             theme: {
@@ -30,14 +29,14 @@
 
 <body class="font-Lexend">
     <!-- menu section -->
-   <section id="main-menu" class="sticky top-0 bg-white">
+   <section id="main-menu" class="sticky top-0 bg-red-50 ">
     <div id="menu" class="bg-[#F9F7F3] py-3 ">
         <div class="flex justify-between w-10/12 mx-auto py-3 items-center">
             <div>
-              <button class="btn bg-[#B4F461] text-[18px] font-bold">Blog</button>
+              <button onclick="window.location.href = 'blog.html'" class="btn bg-[#B4F461] text-[18px] font-bold">Blog</button>
             </div>
             <div class="ml-5">
-              <h3 class="text-[20px]  flex items-center lg:gap-2 font-bold gap-x-2"><span><img src="assets/logo.png" alt="" class="w-16"></span>
+              <h3 class="text-[20px]  flex items-center lg:gap-2 font-bold gap-x-2"><span><img src="assets/logo.png" alt="" class="w-10 md:w-12 "></span>
                 Donate Bangladesh</h3>
             </div>
            <div>
@@ -64,7 +63,7 @@
             class="rounded-lg " />
           </div>
           <div class="md:w-[50%] w-[100%] space-y-4">
-            <button class="px-[15px] py-[12px] bg-gray-300 rounded-md flex gap-1"><img src="assets/coin.png" alt=""><span id="totalDonate">0</span>BDT</button>
+            <button class="px-[15px] py-[12px] bg-gray-300 rounded-md flex gap-1 md:mt-0 mt-2"><img src="assets/coin.png" alt=""><span id="totalDonate">0</span>BDT</button>
             <h1 class="text-[20px] font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
             <p class="text-[18px] font-[500]">
                 The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need..
