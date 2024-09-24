@@ -17,7 +17,7 @@ function sectionHide(id){
     document.getElementById(id).classList.remove('hidden');
 }
 
-// donate functionality
+// all donate card functionality
 function Donate(place,amount,totalDonate,mainBalance){
         // update donate amount
         const inputAmount = getValueOfId(amount);
@@ -33,6 +33,7 @@ function Donate(place,amount,totalDonate,mainBalance){
         const currentBalance = idTextValueCapture(mainBalance);
         const setBalance = document.getElementById(mainBalance);
         setBalance.innerText = currentBalance - inputAmount ;
+
         // transaction section added
         if(place === 'noakhali-Donate'){
             const div = document.createElement('div');
@@ -70,4 +71,6 @@ function Donate(place,amount,totalDonate,mainBalance){
     `
     document.getElementById('history').appendChild(div);
     }
+    // show modal
+    my_modal_3.showModal()
 }
