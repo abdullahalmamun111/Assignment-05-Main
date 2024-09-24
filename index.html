@@ -70,7 +70,7 @@
             </p>
             <input id="donate-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
             <div class="flex justify-center items-center">
-                <button onclick="Donate('noakhali-Donate','donate-amount','totalDonate','main-balance')" id="noakhali-Donate" class="btn bg-[#B4F461] flex justify-center items-center w-full">Donate Now</button>
+                <button onclick="Donate('noakhali-Donate','donate-amount','totalDonate','main-balance'),emptyInput('donate-amount') " id="noakhali-Donate" class="btn bg-[#B4F461] flex justify-center items-center w-full">Donate Now</button>
 
                 <dialog id="my_modal_3" class="modal">
                   <div class="modal-box text-center flex justify-center items-center flex-col space-y-2">   
@@ -106,7 +106,7 @@
             </p>
             <input id="f-donate-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
             <div class="flex justify-center items-center">
-                <button onclick="Donate('feni-donate','f-donate-amount','feni-totalDonate','main-balance')" id="feni-donate" class="btn bg-[#B4F461] flex justify-center items-center w-full">Donate Now</button>
+                <button onclick="Donate('feni-donate','f-donate-amount','feni-totalDonate','main-balance'),emptyInput('f-donate-amount')" id="feni-donate" class="btn bg-[#B4F461] flex justify-center items-center w-full">Donate Now</button>
 
                 <dialog id="my_modal_2" class="modal">
                   <div class="modal-box text-center flex justify-center items-center flex-col space-y-2">   
@@ -142,7 +142,7 @@
             </p>
             <input id="q-donate-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
             <div class="flex justify-center items-center">
-                <button onclick="Donate('quota-donate','q-donate-amount','quota-totalDonate','main-balance')" id="quota-donate" class="btn bg-[#B4F461] flex justify-center items-center w-full">Donate Now</button>
+                <button onclick="Donate('quota-donate','q-donate-amount','quota-totalDonate','main-balance'),emptyInput('q-donate-amount')" id="quota-donate" class="btn bg-[#B4F461] flex justify-center items-center w-full">Donate Now</button>
 
                 <dialog id="my_modal_1" class="modal">
                   <div class="modal-box text-center flex justify-center items-center flex-col space-y-2">   

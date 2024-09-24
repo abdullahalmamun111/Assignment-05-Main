@@ -28,7 +28,8 @@ function Donate(place,amount,totalDonate,mainBalance){
         const donate = idTextValueCapture(totalDonate);
         const setDonate = document.getElementById(totalDonate);
         setDonate.innerText = inputAmount + donate;
-    
+        // set empty input field
+        
         // update main balance
         const currentBalance = idTextValueCapture(mainBalance);
         const setBalance = document.getElementById(mainBalance);
@@ -74,3 +75,10 @@ function Donate(place,amount,totalDonate,mainBalance){
     // show modal
     my_modal_3.showModal()
 }
+
+    // inputfield empty function
+
+    function emptyInput(pasteId){
+       const empty = document.getElementById(pasteId).value = '';
+       return empty ;
+    }
