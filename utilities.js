@@ -38,7 +38,7 @@ function Donate(place,amount,totalDonate,mainBalance){
         if(place === 'noakhali-Donate'){
             const div = document.createElement('div');
             div.innerHTML = `
-            <div class="w-9/12 mx-auto ">
+            <div class="w-9/12 mx-auto">
             <div class="p-[20px] border-solid border-2 rounded-xl mt-8 space-y-2" id="transaction-history">
             <h1 class = "text-xl ">${inputAmount} Taka Is Doanated For Donate for Flood at Noakhali,Bangladesh</h1>
             <p>${new Date()}</p>
@@ -50,7 +50,7 @@ function Donate(place,amount,totalDonate,mainBalance){
     else if(place === 'feni-donate'){
         const div = document.createElement('div');
             div.innerHTML = `
-            <div class="w-9/12 mx-auto ">
+            <div class="w-9/12 mx-auto">
             <div class="p-[20px] border-solid border-2 rounded-xl mt-8 space-y-2" id="transaction-history">
             <h1 class = "text-xl ">${inputAmount} Taka Is Doanated For Donate for Flood at Feni,Bangladesh</h1>
             <p>${new Date()}</p>
@@ -62,7 +62,7 @@ function Donate(place,amount,totalDonate,mainBalance){
     else if(place === 'quota-donate'){
         const div = document.createElement('div');
             div.innerHTML = `
-            <div class="w-9/12 mx-auto ">
+            <div class="w-9/12 mx-auto">
             <div class="p-[20px] border-solid border-2 rounded-xl mt-8 space-y-2" id="transaction-history">
             <h1 class = "text-xl ">${inputAmount} Taka Is Doanated For Donate for Quota movement Bangladesh</h1>
             <p>${new Date()}</p>
