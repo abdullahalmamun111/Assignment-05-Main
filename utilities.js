@@ -34,9 +34,9 @@ function Donate(place,amount,totalDonate,mainBalance){
         // update donate amount
         const donate = idTextValueCapture(totalDonate);
         const setDonate = document.getElementById(totalDonate);
-        setDonate.innerText = inputAmount + donate;
+        setDonate.innerText = (inputAmount + donate).toFixed(2);
         // update main balance
-        setBalance.innerText = currentBalance - inputAmount ;
+        setBalance.innerText = (currentBalance - inputAmount).toFixed(2) ;
         // transaction section added
         if(place === 'noakhali-Donate'){
             const div = document.createElement('div');
