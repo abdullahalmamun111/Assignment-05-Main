@@ -19,22 +19,24 @@ function sectionHide(id){
 
 // all donate card functionality
 function Donate(place,amount,totalDonate,mainBalance){
-        // update donate amount
+        const currentBalance = idTextValueCapture(mainBalance);
+        const setBalance = document.getElementById(mainBalance);
         const inputAmount = getValueOfId(amount);
-        if(isNaN(inputAmount) || inputAmount < 0){
+        // validity check
+        if(inputAmount > currentBalance){
+            alert('Insuffincient Balance On your Account')
+            return;
+        }
+        if(isNaN(inputAmount) || inputAmount <= 0 ){
             alert('Failed To Donate Plese Type Valid Amount')
             return ;
         }
+        // update donate amount
         const donate = idTextValueCapture(totalDonate);
         const setDonate = document.getElementById(totalDonate);
         setDonate.innerText = inputAmount + donate;
-        // set empty input field
-        
         // update main balance
-        const currentBalance = idTextValueCapture(mainBalance);
-        const setBalance = document.getElementById(mainBalance);
         setBalance.innerText = currentBalance - inputAmount ;
-
         // transaction section added
         if(place === 'noakhali-Donate'){
             const div = document.createElement('div');
@@ -75,9 +77,7 @@ function Donate(place,amount,totalDonate,mainBalance){
     // show modal
     my_modal_3.showModal()
 }
-
     // inputfield empty function
-
     function emptyInput(pasteId){
        const empty = document.getElementById(pasteId).value = '';
        return empty ;
