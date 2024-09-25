@@ -18,7 +18,7 @@ function sectionHide(id){
 }
 
 // all donate card functionality
-function Donate(place,amount,totalDonate,mainBalance){
+function donate(place,amount,totalDonate,mainBalance){
         const currentBalance = idTextValueCapture(mainBalance);
         const setBalance = document.getElementById(mainBalance);
         const inputAmount = getValueOfId(amount);
